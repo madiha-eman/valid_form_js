@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Student Registration Form</h1>
+    </div>
+    <div>
+        <table>
+            <form name="myForm" onsubmit = "return(validateForm());" action="submit.html" method="POST">
+                <tr>
+                    <td colspan="1">  
+                         <label><b>Name</b> </label>
+                    </td>
+                    <td>
+                    <input type="text" placeholder="Enter your name" name="Name">
+                     </td>  
+                </tr>
+              <tr>
+                  <td>
+                    <label for=""><b>Father Name</b></label>
+                  </td>
+                   <td>
+                    <input type="text" placeholder="Enter your father name" name="FatherName">
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                    <label for=""><b>Email ID</b></label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your valid email" name="Email">
+                </td>
+              </tr>
+              <tr>
+                  <td>
+                      <label><b>Mobile Number</b></label>
+                  </td>
+                  <td>
+                      <input type="number" placeholder="Enter your Mobile number" name="Mobile">
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                    <label><b>Gander</b></label>
+                </td>
+                <td>
+                    <input type="radio" name="gnd"> Male
+                    <input type="radio" name="gnd"> Female
+                    <input type="radio" name="gnd">Custome
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Date Of Birth</b></label>
+                </td>
+                <td>
+                    <input type="date" name="DOB">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Current Address</b></label>
+                </td>
+                <td>
+                    <input  style="width: 300px; height: 80px;" id="Address" name="Address">
+                </input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>City</b></label>
+                </td>
+                <td>
+                    <select name="Cities">
+                        <option value = "-1" selected>choose yours</option>
+                        <option value="1">Karachi</option>
+                        <option value="2">Lahore</option>
+                        <option value="3">Multan</option>
+                        <option value="4">Peshawar</option>
+                        <option value="5">Quetta</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Pin Code</b></label>
+                </td>
+                <td>
+                    <input type="number" placeholder="Pin Code" name="Pin">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>State</b></label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your State" name="State">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Nationality</b></label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your nationality" name="Nationality">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Religion</b></label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your Religion" name="Religion">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Qualification</b></label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter Your Last school" name="Qualification">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Courses Applied For</b></label>
+                </td>
+                <td>
+                    <input type="text" placeholder="courses Applied for" name="Courses">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Hobbies</b></label>
+                </td>
+                <td>
+                    <input type="checkbox" name="">Drawing
+                    <input type="checkbox" name="">Singing
+                    <input type="checkbox" name="">Dancing
+                    <input type="checkbox" name="">Sketching
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="">Others <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit">                   
+                </td>
+            </tr>
+            </form>
+        </table>
+      
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
